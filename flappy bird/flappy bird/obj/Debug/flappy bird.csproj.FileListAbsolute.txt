@@ -1,0 +1,10 @@
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy bird.csprojResolveAssemblyReference.cache
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy_bird.Form1.resources
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy_bird.Properties.Resources.resources
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy bird.csproj.GenerateResource.Cache
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy bird.csproj.CoreCompileInputs.cache
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\bin\Debug\flappy bird.exe.config
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\bin\Debug\flappy bird.exe
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\bin\Debug\flappy bird.pdb
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy bird.exe
+D:\GitHub\de-tai-ket-thuc-hoc-phan-nguy-n-van-hung-nguy-n-qu-c-m-nh\flappy bird\flappy bird\obj\Debug\flappy bird.pdb
