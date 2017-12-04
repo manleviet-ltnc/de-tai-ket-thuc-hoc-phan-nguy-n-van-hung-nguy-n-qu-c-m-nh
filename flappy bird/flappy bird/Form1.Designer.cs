@@ -38,6 +38,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.nutplay = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ongtren1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ongduoi1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ongtren2)).BeginInit();
@@ -109,12 +110,23 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(788, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(159, 57);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Score:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(865, 639);
+            this.ClientSize = new System.Drawing.Size(982, 571);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.nutplay);
             this.Controls.Add(this.conchim);
             this.Controls.Add(this.ongduoi2);
@@ -134,6 +146,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.conchim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nutplay)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -147,6 +160,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox nutplay;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
