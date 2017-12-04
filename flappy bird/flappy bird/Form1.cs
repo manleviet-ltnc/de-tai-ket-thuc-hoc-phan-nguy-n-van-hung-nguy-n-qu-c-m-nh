@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace flappy_bird
 {
-    public partial class Form1 : Form
+  public partial class Form1 : Form
     {
         public Form1()
         {
@@ -72,7 +72,6 @@ namespace flappy_bird
 
             nutplay.Size = new System.Drawing.Size(50, 50);
 
-
             timer1.Interval = 1;
             timer2.Interval = 50;
 
@@ -97,31 +96,32 @@ namespace flappy_bird
             // độ cao ống 2 = độ cao form - độ cao ống 1 - độ chênh lệch 
 
 
-
+            //   y_ongduoi1 = (1000 + y_ongtren1) + DoChenhLechGiua2OngCong;
 
             ongduoi1.Location = new Point(x_cap1, y_ongduoi1);
 
+
+            //  y_ongtren2 = -700; //ongtren1.Heyght + y_ongtren1 = độ cao hiển thị. (1000 + -700 = 300)
+
             ongtren2.Location = new Point(x_cap2, y_ongtren2);
+
+
+            // y_ongduoi2 = (1000 + y_ongtren2) + DoChenhLechGiua2OngCong;
 
             ongduoi2.Location = new Point(x_cap2, y_ongduoi2);
 
             //kiểm tra nếu cặp ống 1 mà đi qua khỏi form thì cho nó hiện lại đằng sau cặp ống cống 2
             if (x_cap1 + ongtren1.Width <= 0)
-            {
 
                 // hiện lạ đằng sau cặp ống cống 2
                 x_cap1 = 800 + ongtren2.Width + 400; // 400 là khoảng cách giữa 2 cặp.
 
 
-
-                ongtren1.Location = new Point(x_cap1, y_ongtren1);
-                ongduoi1.Location = new Point(x_cap1, y_ongduoi1);
-            }
+            ongtren1.Location = new Point(x_cap1, y_ongtren1);
+            ongduoi1.Location = new Point(x_cap1, y_ongduoi1);
 
             //kiểm tra nếu cặp ống 2 mà đi qua khỏi form thì cho nó hiện lại đằng sau ống 1
             if (x_cap2 + ongtren2.Width <= 0)
-            {
-
 
 
 
@@ -130,12 +130,12 @@ namespace flappy_bird
 
 
 
-                ongtren2.Location = new Point(x_cap2, y_ongtren2);
-                ongduoi2.Location = new Point(x_cap2, y_ongduoi2);
+            ongtren2.Location = new Point(x_cap2, y_ongtren2);
+            ongduoi2.Location = new Point(x_cap2, y_ongduoi2);
 
 
-            }
 
+          
 
         }
         int dem = 0;
@@ -167,15 +167,14 @@ namespace flappy_bird
             }
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
+            private void timer2_Tick(object sender, EventArgs e)
+            {
 
             if (y_conchim + conchim.Height <= this.Height)
             {
 
                 y_conchim += 10;
                 conchim.Location = new Point(x_conchim, y_conchim);
-
                 if (x_conchim + conchim.Width >= x_cap1 && x_conchim + conchim.Width <= x_cap1 + ongtren1.Width)
                 {
                     if (y_conchim <= 1000 + y_ongtren1 || y_conchim + conchim.Height >= y_ongduoi1)
@@ -183,17 +182,22 @@ namespace flappy_bird
                         timer1.Stop();
 
                     }
-
-
                 }
-                else
+                if (x_conchim + conchim.Width >= x_cap2 && x_conchim + conchim.Width <= x_cap2 + ongtren2.Width)
                 {
-                    timer2.Stop();
-                    timer1.Stop();
+                    if (y_conchim <= 1000 + y_ongtren2 || y_conchim + conchim.Height >= y_ongduoi2)
+                    {
+                        timer1.Stop();
+                    }
                 }
             }
+            else
+            {
+                timer2.Stop();
+                timer1.Stop();
+            }
         }
-    }
-}
-    
+        }
 
+
+    }
